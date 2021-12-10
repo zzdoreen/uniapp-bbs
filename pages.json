@@ -3,7 +3,9 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				// "navigationBarTitleText": "首页"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
 			}
 		}, {
 			"path": "pages/me/me",
@@ -15,7 +17,7 @@
 		}, {
 			"path": "pages/feeds/feeds",
 			"style": {
-				"navigationBarTitleText": "动态",
+				"navigationBarTitleText": "动态中心",
 				"enablePullDownRefresh": false
 			}
 
@@ -50,7 +52,9 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"easycom":{ // 按需引入
-		"^u-(.*)":"uview-ui/components/u-$1/u-$1.vue"
+
+	// 按需引入
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	}
 }
